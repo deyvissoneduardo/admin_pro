@@ -26,7 +26,7 @@
                     <li class="nav-item dropdown"> <a class="nav-link" data-bs-toggle="dropdown" href="#"> <i class="bi bi-chat-text"></i> <span class="navbar-badge badge text-bg-danger">3</span> </a>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <a href="#" class="dropdown-item"> <!--begin::Message-->
                                 <div class="d-flex">
-                                    <div class="flex-shrink-0"> <img src="../../dist/assets/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 rounded-circle me-3"> </div>
+                                    <div class="flex-shrink-0"> <img src=" {{ Vite::asset('resources/images/user1-128x128.jpg')}}" alt="User Avatar" class="img-size-50 rounded-circle me-3"> </div>
                                     <div class="flex-grow-1">
                                         <h3 class="dropdown-item-title">
                                             Brad Diesel
@@ -40,7 +40,7 @@
                             </a>
                             <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"> <!--begin::Message-->
                                 <div class="d-flex">
-                                    <div class="flex-shrink-0"> <img src="../../dist/assets/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 rounded-circle me-3"> </div>
+                                    <div class="flex-shrink-0"> <img src=" {{Vite::asset('resources/images/user8-128x128.jpg') }}" alt="User Avatar" class="img-size-50 rounded-circle me-3"> </div>
                                     <div class="flex-grow-1">
                                         <h3 class="dropdown-item-title">
                                             John Pierce
@@ -54,7 +54,7 @@
                             </a>
                             <div class="dropdown-divider"></div> <a href="#" class="dropdown-item"> <!--begin::Message-->
                                 <div class="d-flex">
-                                    <div class="flex-shrink-0"> <img src="../../dist/assets/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 rounded-circle me-3"> </div>
+                                    <div class="flex-shrink-0"> <img src="{{ Vite::asset('resources/images/user3-128x128.jpg') }}" alt="User Avatar" class="img-size-50 rounded-circle me-3"> </div>
                                     <div class="flex-grow-1">
                                         <h3 class="dropdown-item-title">
                                             Nora Silvester
@@ -83,9 +83,9 @@
                         </div>
                     </li> <!--end::Notifications Dropdown Menu--> <!--begin::Fullscreen Toggle-->
                     <li class="nav-item"> <a class="nav-link" href="#" data-lte-toggle="fullscreen"> <i data-lte-icon="maximize" class="bi bi-arrows-fullscreen"></i> <i data-lte-icon="minimize" class="bi bi-fullscreen-exit" style="display: none;"></i> </a> </li> <!--end::Fullscreen Toggle--> <!--begin::User Menu Dropdown-->
-                    <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img src="../../dist/assets/img/user2-160x160.jpg" class="user-image rounded-circle shadow" alt="User Image"> <span class="d-none d-md-inline">Alexander Pierce</span> </a>
+                    <li class="nav-item dropdown user-menu"> <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> <img src="{{ Vite::asset('resources/images/user2-160x160.jpg') }}" class="user-image rounded-circle shadow" alt="User Image"> <span class="d-none d-md-inline">Alexander Pierce</span> </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end"> <!--begin::User Image-->
-                            <li class="user-header text-bg-primary"> <img src="../../dist/assets/img/user2-160x160.jpg" class="rounded-circle shadow" alt="User Image">
+                            <li class="user-header text-bg-primary"> <img src="{{ Vite::asset('resources/images/user2-160x160.jpg') }}" class="rounded-circle shadow" alt="User Image">
                                 <p>
                                     Alexander Pierce - Web Developer
                                     <small>Member since Nov. 2023</small>
@@ -105,7 +105,7 @@
             </div> <!--end::Container-->
         </nav> <!--end::Header--> <!--begin::Sidebar-->
         <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark"> <!--begin::Sidebar Brand-->
-            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="../../dist/assets/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">AdminLTE 4</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
+            <div class="sidebar-brand"> <!--begin::Brand Link--> <a href="./index.html" class="brand-link"> <!--begin::Brand Image--> <img src="{{ Vite::asset('resources/images/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image opacity-75 shadow"> <!--end::Brand Image--> <!--begin::Brand Text--> <span class="brand-text fw-light">AdminLTE 4</span> <!--end::Brand Text--> </a> <!--end::Brand Link--> </div> <!--end::Sidebar Brand--> <!--begin::Sidebar Wrapper-->
             <div class="sidebar-wrapper">
                 <nav class="mt-2"> <!--begin::Sidebar Menu-->
                     <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
@@ -457,7 +457,7 @@
                                                     Alexander Pierce
                                                 </span> <span class="direct-chat-timestamp float-end">
                                                     23 Jan 2:00 pm
-                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="../../dist/assets/img/user1-128x128.jpg" alt="message user image"> <!-- /.direct-chat-img -->
+                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="{{ Vite::asset('resources/images/user1-128x128.jpg') }}" alt="message user image"> <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
                                                 Is this template really for free? That's unbelievable!
                                             </div> <!-- /.direct-chat-text -->
@@ -467,7 +467,7 @@
                                                     Sarah Bullock
                                                 </span> <span class="direct-chat-timestamp float-start">
                                                     23 Jan 2:05 pm
-                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="../../dist/assets/img/user3-128x128.jpg" alt="message user image"> <!-- /.direct-chat-img -->
+                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="{{ Vite::asset('resources/images/user3-128x128.jpg') }}" alt="message user image"> <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
                                                 You better believe it!
                                             </div> <!-- /.direct-chat-text -->
@@ -477,7 +477,7 @@
                                                     Alexander Pierce
                                                 </span> <span class="direct-chat-timestamp float-end">
                                                     23 Jan 5:37 pm
-                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="../../dist/assets/img/user1-128x128.jpg" alt="message user image"> <!-- /.direct-chat-img -->
+                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="{{ Vite::asset('resources/images/user1-128x128.jpg') }}" alt="message user image"> <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">
                                                 Working with AdminLTE on a great new app! Wanna join?
                                             </div> <!-- /.direct-chat-text -->
@@ -487,13 +487,13 @@
                                                     Sarah Bullock
                                                 </span> <span class="direct-chat-timestamp float-start">
                                                     23 Jan 6:10 pm
-                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="../../dist/assets/img/user3-128x128.jpg" alt="message user image"> <!-- /.direct-chat-img -->
+                                                </span> </div> <!-- /.direct-chat-infos --> <img class="direct-chat-img" src="{{ Vite::asset('resources/images/user3-128x128.jpg') }}" alt="message user image"> <!-- /.direct-chat-img -->
                                             <div class="direct-chat-text">I would love to.</div> <!-- /.direct-chat-text -->
                                         </div> <!-- /.direct-chat-msg -->
                                     </div> <!-- /.direct-chat-messages--> <!-- Contacts are loaded here -->
                                     <div class="direct-chat-contacts">
                                         <ul class="contacts-list">
-                                            <li> <a href="#"> <img class="contacts-list-img" src="../../dist/assets/img/user1-128x128.jpg" alt="User Avatar">
+                                            <li> <a href="#"> <img class="contacts-list-img" src="{{ Vite::asset('resources/images/user1-128x128.jpg') }}" alt="User Avatar">
                                                     <div class="contacts-list-info"> <span class="contacts-list-name">
                                                             Count Dracula
                                                             <small class="contacts-list-date float-end">
@@ -502,7 +502,7 @@
                                                             How have you been? I was...
                                                         </span> </div> <!-- /.contacts-list-info -->
                                                 </a> </li> <!-- End Contact Item -->
-                                            <li> <a href="#"> <img class="contacts-list-img" src="../../dist/assets/img/user7-128x128.jpg" alt="User Avatar">
+                                            <li> <a href="#"> <img class="contacts-list-img" src="{{ Vite::asset('resources/images/user7-128x128.jpg') }}" alt="User Avatar">
                                                     <div class="contacts-list-info"> <span class="contacts-list-name">
                                                             Sarah Doe
                                                             <small class="contacts-list-date float-end">
@@ -511,7 +511,7 @@
                                                             I will be waiting for...
                                                         </span> </div> <!-- /.contacts-list-info -->
                                                 </a> </li> <!-- End Contact Item -->
-                                            <li> <a href="#"> <img class="contacts-list-img" src="../../dist/assets/img/user3-128x128.jpg" alt="User Avatar">
+                                            <li> <a href="#"> <img class="contacts-list-img" src="{{ Vite::asset('resources/images/user3-128x128.jpg') }}" alt="User Avatar">
                                                     <div class="contacts-list-info"> <span class="contacts-list-name">
                                                             Nadia Jolie
                                                             <small class="contacts-list-date float-end">
@@ -520,7 +520,7 @@
                                                             I'll call you back at...
                                                         </span> </div> <!-- /.contacts-list-info -->
                                                 </a> </li> <!-- End Contact Item -->
-                                            <li> <a href="#"> <img class="contacts-list-img" src="../../dist/assets/img/user5-128x128.jpg" alt="User Avatar">
+                                            <li> <a href="#"> <img class="contacts-list-img" src="{{ Vite::asset('resources/images/user5-128x128.jpg') }}" alt="User Avatar">
                                                     <div class="contacts-list-info"> <span class="contacts-list-name">
                                                             Nora S. Vans
                                                             <small class="contacts-list-date float-end">
@@ -529,7 +529,7 @@
                                                             Where is your new...
                                                         </span> </div> <!-- /.contacts-list-info -->
                                                 </a> </li> <!-- End Contact Item -->
-                                            <li> <a href="#"> <img class="contacts-list-img" src="../../dist/assets/img/user6-128x128.jpg" alt="User Avatar">
+                                            <li> <a href="#"> <img class="contacts-list-img" src="{{ Vite::asset('resources/images/user6-128x128.jpg') }}" alt="User Avatar">
                                                     <div class="contacts-list-info"> <span class="contacts-list-name">
                                                             John K.
                                                             <small class="contacts-list-date float-end">
@@ -538,7 +538,7 @@
                                                             Can I take a look at...
                                                         </span> </div> <!-- /.contacts-list-info -->
                                                 </a> </li> <!-- End Contact Item -->
-                                            <li> <a href="#"> <img class="contacts-list-img" src="../../dist/assets/img/user8-128x128.jpg" alt="User Avatar">
+                                            <li> <a href="#"> <img class="contacts-list-img" src="{{ Vite::asset('resources/images/user8-128x128.jpg') }}" alt="User Avatar">
                                                     <div class="contacts-list-info"> <span class="contacts-list-name">
                                                             Kenneth M.
                                                             <small class="contacts-list-date float-end">
@@ -599,29 +599,6 @@
             <!--end::Copyright-->
         </footer> <!--end::Footer-->
     </div> <!--end::App Wrapper--> <!--begin::Script--> <!--begin::Third Party Plugin(OverlayScrollbars)-->
-    <script>
-        const SELECTOR_SIDEBAR_WRAPPER = ".sidebar-wrapper";
-        const Default = {
-            scrollbarTheme: "os-theme-light",
-            scrollbarAutoHide: "leave",
-            scrollbarClickScroll: true,
-        };
-        document.addEventListener("DOMContentLoaded", function() {
-            const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
-            if (
-                sidebarWrapper &&
-                typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== "undefined"
-            ) {
-                OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
-                    scrollbars: {
-                        theme: Default.scrollbarTheme,
-                        autoHide: Default.scrollbarAutoHide,
-                        clickScroll: Default.scrollbarClickScroll,
-                    },
-                });
-            }
-        });
-    </script> <!--end::OverlayScrollbars Configure--> <!-- OPTIONAL SCRIPTS --> <!-- sortablejs -->
     <script>
         const connectedSortables =
             document.querySelectorAll(".connectedSortable");
